@@ -1,0 +1,12 @@
+#include <stdio.h>
+ main() {
+    int fib[6] = {0, 1}; 
+    int i;
+    for (i = 2; i < 6; i++) {
+        fib[i] = fib[i-1] + fib[i-2];
+    }
+    for (i = 0; i < 6; i++) {
+        printf("%d ", fib[i]); 
+    }
+    printf("\n");
+}
